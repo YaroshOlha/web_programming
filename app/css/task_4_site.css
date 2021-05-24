@@ -1,0 +1,39 @@
+/* Стиль курсора для елементів бокового меню */
+li.nav-item {
+   cursor: pointer;
+}
+
+/* Додаткові стилі для малих екранів */
+@media only screen {
+   /* Меню сайту */
+   #menu {
+      border-right: 1px salmon;
+   }
+}
+
+/* Додаткові стилі для середніх та великих екранів */
+@media only screen and (min-width : 576px) {
+   /* Меню сайту */
+   #menu {
+      border-right: 1px solid #be5f42;
+   }
+   /* Основний блок сайту */
+   #context {
+      height: 100vh;
+      min-height: 100vh;
+      overflow-y: #be5f42;
+   }
+}
+
+/* Стилі картин */
+.painting {
+   border: 1px solid white;
+   transition: border .3s;
+   cursor: pointer;
+}
+
+/* Стилі при наведенні на картину */
+.painting:hover {
+   border: 1px solid #fc9208;
+   transition: border .3s;
+}
